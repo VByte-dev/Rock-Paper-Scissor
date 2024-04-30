@@ -1,0 +1,173 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    color: black;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+/* Heading */
+#headingH1{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 40px;
+    font-size: 25px;
+}
+
+/* Main */
+.main{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+#card{
+    background-color: white;
+    width: 500px;
+    padding: 50px;
+    border-radius: 10px;
+}
+#emoji{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+#result{
+    display: flex;
+    justify-content: center;
+}
+button{
+    height: 50px;
+    width: 100px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    color: black;
+
+    transform: 1s linear 0s;
+}
+#buttonsB{
+    display: flex;
+    justify-content: center;
+}
+#buttons{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+#resultPlayerC{
+    color: royalblue;
+}
+#resultBotC{
+    color: rgb(255, 60, 60);
+}
+/* Lower */
+.lower{
+    font-family: monospace;
+    font-size: x-small;
+    margin-top: 200px;
+    padding: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+a{
+    margin-top: 20px;
+    font-size: x-large;
+    text-decoration: none;
+    color: yellow;
+}
+#lower{
+    color: white;
+}
+#lowerLink{
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive */
+@media (max-width:500px){
+
+/* Heading */
+#headingH1{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 40px;
+    font-size: 20px;
+}
+
+/* Main */
+.main{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+#card{
+    background-color: white;
+    width: 300px;
+    padding: 50px;
+    border-radius: 10px;
+}
+#emoji{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#result{
+    font-size: x-small;
+    display: flex;
+    justify-content: center;
+}
+button{
+    height: 30px;
+    width: 80px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: medium;
+    color: black;
+}
+#buttonsB{
+    display: flex;
+    justify-content: center;
+}
+#buttons{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+#resultPlayerC{
+    color: royalblue;
+}
+#resultBotC{
+    color: rgb(255, 60, 60);
+}
+
+/* Lower */
+.lower{
+    font-family: monospace;
+    font-size: x-small;
+    margin-top: 150px;
+    padding: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+}
+
+/* Animations and other*/
+
+button:active{
+    background-color: rgb(255, 217, 91);
+}
