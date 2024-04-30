@@ -9,6 +9,9 @@ b3.addEventListener('click', S)
 
 // Rock, Paper, Result Functions
 
+let pScore = 0;
+let bScore = 0;
+
 function R(){
     let playerResult = document.querySelector('#resultPlayerC').innerHTML = 'Player : Rock';
 
@@ -31,13 +34,19 @@ function R(){
         winnerResult.innerHTML = 'Winner : Bot'
 
         let resultEmoji = document.querySelector('#emojiC').innerHTML = '😥';
+        bScore += 1;
+
     }
     else if(enemyC == 'Scissor'){
         let winnerResult = document.querySelector('#resultResultC');
         winnerResult.innerHTML = 'Winner : Player'
 
         let resultEmoji = document.querySelector('#emojiC').innerHTML = '😁';
+        pScore += 1;
     }
+
+    document.querySelector('#scoreP').innerHTML = `Player : ${pScore}`;
+    document.querySelector('#scoreB').innerHTML = `Bot : ${bScore}`;
 }
 
 function P(){
@@ -62,13 +71,18 @@ function P(){
         winnerResult.innerHTML = 'Winner : Player'
 
         let resultEmoji = document.querySelector('#emojiC').innerHTML = '😀';
+        pScore += 1;
     }
     else if(enemyC == 'Scissor'){
         let winnerResult = document.querySelector('#resultResultC');
         winnerResult.innerHTML = 'Winner : Bot'
 
         let resultEmoji = document.querySelector('#emojiC').innerHTML = '😥';
+        bScore += 1;
     }
+
+    document.querySelector('#scoreP').innerHTML = `Player : ${pScore}`;
+    document.querySelector('#scoreB').innerHTML = `Bot : ${bScore}`;
 }
 
 function S(){
@@ -93,11 +107,16 @@ function S(){
         winnerResult.innerHTML = 'Winner : Bot'
 
         let resultEmoji = document.querySelector('#emojiC').innerHTML = '😥';
+        bScore += 1;
     }
     else if(enemyC == 'Paper'){
         let winnerResult = document.querySelector('#resultResultC');
         winnerResult.innerHTML = 'Winner : Player'
 
         let resultEmoji = document.querySelector('#emojiC').innerHTML = '😀';
+        pScore += 1;
     }
+    
+    document.querySelector('#scoreP').innerHTML = `Player : ${pScore}`;
+    document.querySelector('#scoreB').innerHTML = `Bot : ${bScore}`;
 }
