@@ -36,6 +36,7 @@ html, body{
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 60px;
+
 }
 #s2{
     margin-top: 20px;
@@ -48,9 +49,10 @@ html, body{
     justify-content: center;
 }
 #card{
+    padding-left: 10px;
     background-color: white;
     width: 500px;
-    padding: 50px;
+    padding: 30px;
     border-radius: 10px;
 }
 #emoji{
